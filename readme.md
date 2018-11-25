@@ -16,6 +16,7 @@ git clone https://github.com/Yi-love/hexo-theme-f25.git
 ```
 
 ## config 
+not next page , only one page.
 
 ```yml
 # _config.yml
@@ -32,14 +33,20 @@ timezone: Asia/Shanghai
 copyright:  
 
 
-
 # required
 menu:
   Home: /
   About: /about
 
+index_generator:
+  path: ''
+  per_page: 10000
+
+# not next page , only one page.
+per_page: 10000
+
 # required
-theme: f25
+theme: hexo-theme-f25
 ```
 
 ```yml
