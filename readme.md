@@ -6,7 +6,7 @@ demo : [https:jinyy.app](https://jinyy.app)
 demo : [https:futu.im](https://futu.im)
 
 
-github: [https://github.com/futuweb/futu.im](https://github.com/futuweb/futu.im)
+futu.im github: [https://github.com/futuweb/futu.im](https://github.com/futuweb/futu.im)
 
 
 ## npm install

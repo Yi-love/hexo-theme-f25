@@ -1,6 +1,6 @@
 <div class="wrapper header-wrapper">
     <div class="container header-nav-wrapper">
-        <div class="logo"><a href="/"><h1 class="title">Jin</h1></a></div>
+        <div class="logo"><a href="/"><h1 class="title"><%=config.title%></h1></a></div>
         <div class="nav-wrapper">
             <% for (var i in cates){%>
                 <a href="<%- url_for(cates[i])%>"><%=i%></a>
