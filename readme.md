@@ -1,6 +1,10 @@
 # hexo-theme-f25
 this is a blog theme for hexo.
 
+
+![theme](./theme.png)
+
+
 demo : [https:jinyy.app](https://jinyy.app)
 
 demo : [https:futu.im](https://futu.im)
