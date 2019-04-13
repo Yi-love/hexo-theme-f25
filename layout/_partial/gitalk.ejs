@@ -1,0 +1,15 @@
+<% if(theme.gitalk_clientID && theme.gitalk_clientSecret){ %>
+<script>
+    var gitalkAdmin = '<%=theme.gitalk_admin%>'.split(',');
+    var gitalk = new Gitalk({
+        clientID: '<%=theme.gitalk_clientID%>',
+        clientSecret: '<%=theme.gitalk_clientSecret%>',
+        repo: '<%=theme.gitalk_repo%>',
+        owner: '<%=theme.gitalk_owner%>',
+        admin: gitalkAdmin,
+        id: location.pathname.length > <%=theme.gitalk_pathname_max_length%> ? location.pathname.substr(0,<%=theme.gitalk_pathname_max_length%>) : location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
+</script>
+<%}%>

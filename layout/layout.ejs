@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="<%=config.language%>">
+<html lang="zh-CN">
 <head>
     <%- partial('_partial/head') %>
 </head>
 <body>
     <%- partial('_partial/header' , {cates:config.menu}) %>
-    <div class="body-wrapper" id="J_body">
+    <section class="body-wrapper">
         <%-body%>
         <%- partial('_partial/footer') %>
-    </div>
+    </section>
     <%- js('js/f25.js') %>
+    <% if (is_post() && theme.gitalk_clientID && theme.gitalk_clientSecret ){ %>
+        <%- js('js/gitalk.min.js') %>
+        <%- partial('_partial/gitalk') %>
+    <%}%>
 </body>
 </html>

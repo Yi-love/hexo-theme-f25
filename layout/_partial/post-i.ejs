@@ -1,13 +1,12 @@
-<div class="post-i-wrapper">
+<li class="post-i-wrapper">
     <a href="<%- url_for(item.path)%>" class="wrapper post-i-link" title="<%=item.title%>">
         <div class="wrapper cover">
             <img src="<%- url_for(item.cover || theme.default_cover)%>" alt="<%=item.title%>">
         </div>
-        <div class="wrapper">
-            <h3 class="title" title="<%=item.title%>"><%=item.title%></h3>
-        </div>
-        <div class="wrapper subtitle">
+        <h3 class="wrapper title" title="<%=item.title%>"><%=item.title%></h3>
+        <p class="wrapper subtitle">
             <%-item.subtitle%>
-        </div>
+        </p>
+        <div class="wrapper time"><%- full_date(item.date, 'YYYY-MM-DD') %></div>
     </a>
-</div>
+</li>

@@ -145,8 +145,11 @@ html , body{
     color: #fff;
     background-color: #6C62C7;
 }
-
+.list-container{
+    padding: 0;
+}
 .post-i-wrapper{
+    list-style: none;
     width: 280px;
     height: 240px;
     float: left;
@@ -194,6 +197,7 @@ html , body{
     box-sizing: border-box;
     padding: 10px;
     color: #666;
+    margin: 0;
 }
 
 .post-banner{
@@ -266,6 +270,10 @@ html , body{
 .post-content p{
     -ms-word-break: break-all;
     word-break: break-all;
+}
+.gitalk-wrapper{
+    padding: 20px 10px;
+    box-sizing: border-box;
 }
 .footer-wrapper{
     width: 100%;
