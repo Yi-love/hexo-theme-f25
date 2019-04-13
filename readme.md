@@ -54,9 +54,13 @@ theme: hexo-theme-f25
 # required
 
 default_cover: images/default_cover.jpg
-
 google_analytics: 
-# favicon
+gitalk_clientID: 
+gitalk_clientSecret:
+gitalk_repo: you_repo
+gitalk_owner: you_name
+gitalk_admin: you_name,user_one
+gitalk_pathname_max_length: 50
 favicon: /images/favicon.ico
 ```
 
