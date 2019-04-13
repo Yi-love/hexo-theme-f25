@@ -41,7 +41,7 @@
   <title><%= title.join(' | ') %></title>
   <%- css('css/f25.css') %>
   <%- css('css/highlight.css') %>
-  <% if (is_post() && theme.gitalk_clientID && theme.gitalk_clientSecre){ %>
+  <% if (is_post() && theme.gitalk_clientID && theme.gitalk_clientSecret){ %>
     <%- css('css/gitalk.css') %>
   <%}%>
   <%- partial('google-analytics') %>
