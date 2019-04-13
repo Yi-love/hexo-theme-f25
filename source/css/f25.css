@@ -6,10 +6,10 @@ body{
     -ms-text-size-adjust: 100%;
     text-rendering: optimizelegibility;
     -webkit-overflow-scrolling: touch;
+    overflow: scroll;
 }
 html , body{
     height: 100%;
-    overflow: scroll;
 }
 .header-wrapper{
     height: 64px;
@@ -108,7 +108,6 @@ html , body{
     box-sizing: border-box;
     padding: 64px 0 60px 0;
     position: relative;
-    overflow: scroll;
 }
 .banner-wrapper{
     height: 250px;
@@ -192,14 +191,21 @@ html , body{
     text-indent: 28px;
     font-size: 14px;
     font-weight: 400;
-    max-height: 64px;
+    max-height: 44px;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0 10px;
     color: #666;
     margin: 0;
 }
-
+.post-i-wrapper .time{
+    color: #999;
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+}
 .post-banner{
     height: 400px;   
     background-color: #6C62C7;

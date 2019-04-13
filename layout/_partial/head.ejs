@@ -24,7 +24,7 @@
   <% if (page.title){ %>
     <meta property="og:type" content="article" />
     <meta property="og:url" content="<%-url_for(config.url + '/' + page.path)%>" />
-    <meta property="og:image" content="<%- url_for(config.url + '/' + (page.cover || theme.default_cover))%>" />
+    <meta property="og:image" content="<%- url_for(config.url + (page.cover || theme.default_cover))%>" />
     <meta property="og:description" content="<%=page.title %>--<%=page.subtitle%>" />
     <meta name="description" content="<%=page.title %>--<%=page.subtitle%>" />
   <%}else{%>
