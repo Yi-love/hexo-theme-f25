@@ -2,6 +2,7 @@ default_cover: images/default_cover.jpg
 google_analytics: 
 gitalk_clientID: 
 gitalk_clientSecret:
+gitalk_accessToken:
 gitalk_repo: you_repo
 gitalk_owner: you_name
 gitalk_admin: you_name,user_one
